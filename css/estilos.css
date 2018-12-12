@@ -1,0 +1,425 @@
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0; }
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px; }
+
+.contenedor {
+  width: 90%;
+  max-width: 1000px;
+  margin: auto;
+  overflow: hidden; }
+
+header {
+  background: url("../img/fondo.jpg") #f2f2f2;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  max-height: 650px; }
+  header .menu {
+    margin: 30px 0;
+    text-align: right; }
+    header .menu a {
+      display: inline-block;
+      margin: 0 20px;
+      padding-bottom: 10px;
+      border-bottom: 2px solid transparent;
+      text-decoration: none;
+      color: #fff;
+      font-size: 1em;
+      line-height: 27px; }
+      header .menu a:hover {
+        border-bottom: 2px solid #fff; }
+  header .contenedor-texto {
+    margin: 183px 0; }
+    header .contenedor-texto .texto h1, header .contenedor-texto .texto h2 {
+      margin: 0;
+      font-weight: 400;
+      color: #fff; }
+    header .contenedor-texto .texto .titulo {
+      font-size: 48px;
+      line-height: 48px;
+      margin-bottom: 60px; }
+    header .contenedor-texto .texto .subtitulo {
+      font-size: 21px;
+      line-height: 21px;
+      margin-bottom: 30px; }
+    header .contenedor-texto .texto a {
+      display: inline-block;
+      padding: 12px 24px;
+      background: #fff;
+      opacity: 0.6;
+      font-size: 1.125em;
+      line-height: 32px;
+      text-decoration: none;
+      color: #000; }
+      header .contenedor-texto .texto a:hover {
+        opacity: 0.7; }
+
+.main .acerca-de {
+  background: #000;
+  text-align: center; }
+  .main .acerca-de .texto {
+    width: 80%;
+    margin: 80px auto 50px auto;
+    font-size: 1.125em;
+    font-weight: 600;
+    line-height: 30px;
+    color: #eee; }
+    .main .acerca-de .texto .titulo {
+      font-weight: 300;
+      font-size: 36px;
+      line-height: 36px;
+      color: #dd820d;
+      margin-bottom: 40px; }
+.main .caracteristicas {
+  margin: 150px 0 110px 0; }
+  .main .caracteristicas .contenedor-caracteristicas {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between; }
+    .main .caracteristicas .contenedor-caracteristicas .caracteristica {
+      width: 22%;
+      margin-bottom: 40px;
+      text-align: center; }
+      .main .caracteristicas .contenedor-caracteristicas .caracteristica i {
+        font-size: 64px; }
+      .main .caracteristicas .contenedor-caracteristicas .caracteristica .titulo {
+        margin: 40px 0;
+        font-weight: 600;
+        font-size: 18px;
+        font-weight: 18px;
+        color: #c36f09; }
+      .main .caracteristicas .contenedor-caracteristicas .caracteristica .descripcion {
+        line-height: 27px;
+        font-size: 15px;
+        margin: 0;
+        font-weight: 300; }
+.main .trabajos {
+  background: #171b17; }
+  .main .trabajos .texto {
+    width: 80%;
+    margin: 80px auto 100px auto;
+    color: #fff;
+    text-align: center; }
+    .main .trabajos .texto .titulo {
+      font-weight: 300;
+      font-size: 36px;
+      line-height: 36px;
+      color: #fff;
+      margin-bottom: 40px; }
+    .main .trabajos .texto .descripcion {
+      font-weight: 600;
+      font-size: 18px;
+      line-height: 18px;
+      color: #fff; }
+  .main .trabajos .contenedor-trabajos {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 80px; }
+    .main .trabajos .contenedor-trabajos .trabajo {
+      width: 23%;
+      padding: 5px;
+      border: 1px solid #484848;
+      opacity: 0.5;
+      margin-bottom: 20px; }
+      .main .trabajos .contenedor-trabajos .trabajo:hover {
+        opacity: 1;
+        border: 1px solid #fff; }
+      .main .trabajos .contenedor-trabajos .trabajo .foto {
+        width: 100%; }
+        .main .trabajos .contenedor-trabajos .trabajo .foto img {
+          width: 100%;
+          vertical-align: top; }
+.main .precios {
+  background: #616161; }
+  .main .precios .texto {
+    width: 80%;
+    margin: 80px auto 50px auto;
+    color: #fff;
+    text-align: center; }
+    .main .precios .texto .titulo {
+      font-weight: 300;
+      font-size: 36px;
+      line-height: 36px;
+      margin-bottom: 40px; }
+    .main .precios .texto .descripcion {
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 18px; }
+  .main .precios .contenedor-precios {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: baseline;
+    margin-bottom: 50px; }
+    .main .precios .contenedor-precios .basico, .main .precios .contenedor-precios .pro, .main .precios .contenedor-precios .premium {
+      width: 30%; }
+      .main .precios .contenedor-precios .basico:hover, .main .precios .contenedor-precios .pro:hover, .main .precios .contenedor-precios .premium:hover {
+        box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5); }
+      .main .precios .contenedor-precios .basico .ofertas, .main .precios .contenedor-precios .pro .ofertas, .main .precios .contenedor-precios .premium .ofertas {
+        list-style: none; }
+        .main .precios .contenedor-precios .basico .ofertas .titulo, .main .precios .contenedor-precios .pro .ofertas .titulo, .main .precios .contenedor-precios .premium .ofertas .titulo {
+          padding: 32px 16px;
+          border-bottom: 1px solid #ddd;
+          text-align: center;
+          background: #000;
+          color: #fff;
+          font-size: 24px; }
+        .main .precios .contenedor-precios .basico .ofertas .almacenamiento, .main .precios .contenedor-precios .pro .ofertas .almacenamiento, .main .precios .contenedor-precios .premium .ofertas .almacenamiento {
+          padding: 16px;
+          border-bottom: 1px solid #ddd;
+          text-align: center;
+          font-size: 15px;
+          background: #fff;
+          line-height: 27px; }
+          .main .precios .contenedor-precios .basico .ofertas .almacenamiento .bold, .main .precios .contenedor-precios .pro .ofertas .almacenamiento .bold, .main .precios .contenedor-precios .premium .ofertas .almacenamiento .bold {
+            font-weight: 600; }
+        .main .precios .contenedor-precios .basico .ofertas .correos, .main .precios .contenedor-precios .pro .ofertas .correos, .main .precios .contenedor-precios .premium .ofertas .correos {
+          padding: 16px;
+          border-bottom: 1px solid #ddd;
+          text-align: center;
+          font-size: 15px;
+          background: #fff;
+          line-height: 27px; }
+          .main .precios .contenedor-precios .basico .ofertas .correos .bold, .main .precios .contenedor-precios .pro .ofertas .correos .bold, .main .precios .contenedor-precios .premium .ofertas .correos .bold {
+            font-weight: 600; }
+        .main .precios .contenedor-precios .basico .ofertas .dominios, .main .precios .contenedor-precios .pro .ofertas .dominios, .main .precios .contenedor-precios .premium .ofertas .dominios {
+          padding: 16px;
+          border-bottom: 1px solid #ddd;
+          text-align: center;
+          font-size: 15px;
+          background: #fff;
+          line-height: 27px; }
+          .main .precios .contenedor-precios .basico .ofertas .dominios .bold, .main .precios .contenedor-precios .pro .ofertas .dominios .bold, .main .precios .contenedor-precios .premium .ofertas .dominios .bold {
+            font-weight: 600; }
+        .main .precios .contenedor-precios .basico .ofertas .soporte, .main .precios .contenedor-precios .pro .ofertas .soporte, .main .precios .contenedor-precios .premium .ofertas .soporte {
+          padding: 16px;
+          border-bottom: 1px solid #ddd;
+          text-align: center;
+          font-size: 15px;
+          background: #fff;
+          line-height: 27px; }
+          .main .precios .contenedor-precios .basico .ofertas .soporte .bold, .main .precios .contenedor-precios .pro .ofertas .soporte .bold, .main .precios .contenedor-precios .premium .ofertas .soporte .bold {
+            font-weight: 600; }
+        .main .precios .contenedor-precios .basico .ofertas .costo, .main .precios .contenedor-precios .pro .ofertas .costo, .main .precios .contenedor-precios .premium .ofertas .costo {
+          padding: 16px;
+          border-bottom: 1px solid #ddd;
+          text-align: center;
+          background: #fff;
+          line-height: 27px; }
+          .main .precios .contenedor-precios .basico .ofertas .costo .bold, .main .precios .contenedor-precios .pro .ofertas .costo .bold, .main .precios .contenedor-precios .premium .ofertas .costo .bold {
+            font-weight: 400;
+            line-height: 54px;
+            font-size: 30px;
+            margin: 10px 0; }
+          .main .precios .contenedor-precios .basico .ofertas .costo .light, .main .precios .contenedor-precios .pro .ofertas .costo .light, .main .precios .contenedor-precios .premium .ofertas .costo .light {
+            font-size: 15px;
+            line-height: 18px;
+            font-weight: 400;
+            opacity: 0.6; }
+        .main .precios .contenedor-precios .basico .ofertas .registro, .main .precios .contenedor-precios .pro .ofertas .registro, .main .precios .contenedor-precios .premium .ofertas .registro {
+          background: #f1f1f1;
+          padding: 24px 16px;
+          text-align: center; }
+          .main .precios .contenedor-precios .basico .ofertas .registro button, .main .precios .contenedor-precios .pro .ofertas .registro button, .main .precios .contenedor-precios .premium .ofertas .registro button {
+            background: #000;
+            color: #fff;
+            font-size: 15px;
+            line-height: 27px;
+            padding: 12px 24px;
+            border: none; }
+            .main .precios .contenedor-precios .basico .ofertas .registro button:hover, .main .precios .contenedor-precios .pro .ofertas .registro button:hover, .main .precios .contenedor-precios .premium .ofertas .registro button:hover {
+              cursor: pointer;
+              background: #c6c6c6;
+              color: #000; }
+    .main .precios .contenedor-precios .pro .ofertas .titulo {
+      background: #f44336;
+      line-height: 43.2px;
+      padding: 48px 16px;
+      border-bottom: 1px solid #ddd; }
+
+footer {
+  background: #f1f1f1; }
+  footer .contacto {
+    padding: 128px 0; }
+    footer .contacto .texto {
+      text-align: center; }
+      footer .contacto .texto .titulo {
+        margin: 0;
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 24px; }
+      footer .contacto .texto .descripcion {
+        font-size: 18px;
+        line-height: 18px;
+        margin: 18px 0; }
+    footer .contacto .informacion-contacto {
+      margin: 48px 0 57px 0; }
+      footer .contacto .informacion-contacto .direccion, footer .contacto .informacion-contacto .telefono, footer .contacto .informacion-contacto .correo {
+        margin-bottom: 15px;
+        line-height: 27px;
+        font-size: 16px; }
+        footer .contacto .informacion-contacto .direccion i, footer .contacto .informacion-contacto .telefono i, footer .contacto .informacion-contacto .correo i {
+          font-size: 36px;
+          text-align: center;
+          margin-right: 16px; }
+    footer .contacto .formulario form p {
+      margin-bottom: 15px; }
+      footer .contacto .formulario form p .nombre, footer .contacto .formulario form p .email, footer .contacto .formulario form p .asunto, footer .contacto .formulario form p .mensaje {
+        display: block;
+        width: 100%;
+        padding: 8px;
+        border: 1px solid #ccc;
+        border-radius: 3px;
+        font-size: 15px;
+        line-height: 27px; }
+        footer .contacto .formulario form p .nombre:focus, footer .contacto .formulario form p .email:focus, footer .contacto .formulario form p .asunto:focus, footer .contacto .formulario form p .mensaje:focus {
+          border: 2px solid #707070; }
+      footer .contacto .formulario form p .mensaje {
+        min-width: 100%;
+        max-width: 100%;
+        min-height: 45px;
+        max-height: 90px; }
+      footer .contacto .formulario form p .boton {
+        padding: 8px 16px;
+        background: #000;
+        color: #fff;
+        border: none;
+        line-height: 27px;
+        font-size: 15px; }
+        footer .contacto .formulario form p .boton:hover {
+          color: #000;
+          background: #ccc;
+          cursor: pointer; }
+  footer .redes-sociales {
+    background: #000;
+    padding: 50px 0; }
+    footer .redes-sociales .boton-inicio {
+      margin: 40px 0 20px 0;
+      display: flex;
+      flex-direction: row;
+      justify-content: center; }
+      footer .redes-sociales .boton-inicio a {
+        display: block;
+        padding: 8px 16px;
+        background: #fff;
+        color: #000;
+        font-size: 15px;
+        line-height: 27px;
+        text-decoration: none; }
+        footer .redes-sociales .boton-inicio a i {
+          margin-right: 16px; }
+        footer .redes-sociales .boton-inicio a:hover {
+          background: #ccc; }
+    footer .redes-sociales .contenedor-redes {
+      padding: 20px 0;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: center; }
+      footer .redes-sociales .contenedor-redes a {
+        display: block;
+        padding: 15px;
+        border-radius: 3px;
+        font-size: 32px;
+        line-height: 32px;
+        color: #fff;
+        width: 100px;
+        text-align: center; }
+      footer .redes-sociales .contenedor-redes .facebook:hover {
+        background: #3b5998; }
+      footer .redes-sociales .contenedor-redes .instagram:hover {
+        background: #5851db; }
+      footer .redes-sociales .contenedor-redes .twitter:hover {
+        background: #1da1f2; }
+      footer .redes-sociales .contenedor-redes .linkedin:hover {
+        background: #0077b5; }
+
+@media screen and (max-width: 800px) {
+  header .menu {
+    text-align: center; }
+  header .contenedor-texto .texto .titulo {
+    font-size: 36px;
+    line-height: 36px; }
+  header .contenedor-texto .texto .subtitulo {
+    font-size: 18px;
+    line-height: 18px; }
+  header .contenedor-texto .texto a {
+    font-size: 0.95em; }
+
+  .main .caracteristicas .contenedor-caracteristicas .caracteristica {
+    width: 47%; }
+  .main .trabajos .contenedor-trabajos .trabajo {
+    width: 47%; }
+  .main .precios .contenedor-precios {
+    flex-direction: column;
+    align-items: center; }
+    .main .precios .contenedor-precios .basico, .main .precios .contenedor-precios .pro, .main .precios .contenedor-precios .premium {
+      width: 50%;
+      margin-bottom: 40px; } }
+@media screen and (max-width: 600px) {
+  header .menu {
+    text-align: center; }
+    header .menu a {
+      display: block;
+      margin-bottom: 20px; }
+      header .menu a:hover {
+        border-bottom: 2px solid rgba(255, 255, 255, 0.2); }
+  header .contenedor-texto {
+    margin: 40px 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center; }
+    header .contenedor-texto .texto .titulo {
+      font-size: 32px;
+      line-height: 32px; }
+    header .contenedor-texto .texto .subtitulo {
+      font-size: 1em;
+      line-height: 1em; }
+    header .contenedor-texto .texto a {
+      font-size: 0.95em; }
+
+  .main .caracteristicas .contenedor-caracteristicas {
+    flex-direction: column;
+    align-items: center; }
+    .main .caracteristicas .contenedor-caracteristicas .caracteristica {
+      width: 70%; }
+  .main .trabajos .contenedor-trabajos {
+    flex-direction: column;
+    align-items: center; }
+    .main .trabajos .contenedor-trabajos .trabajo {
+      width: 70%;
+      margin-bottom: 40px; }
+  .main .precios .texto .descripcion {
+    line-height: 27px; }
+  .main .precios .contenedor-precios .basico, .main .precios .contenedor-precios .pro, .main .precios .contenedor-precios .premium {
+    width: 70%;
+    margin-bottom: 40px; } }
+@media screen and (max-width: 400px) {
+  header .contenedor-texto .texto {
+    text-align: center; }
+    header .contenedor-texto .texto .titulo {
+      font-size: 24px;
+      line-height: 24px; }
+    header .contenedor-texto .texto .subtitulo {
+      display: none; }
+
+  .main .precios .contenedor-precios .basico, .main .precios .contenedor-precios .pro, .main .precios .contenedor-precios .premium {
+    width: 90%; }
+  .main .trabajos .texto .descripcion {
+    line-height: 27px; }
+
+  footer .contacto .texto .descripcion {
+    line-height: 27px; } }
+
+/*# sourceMappingURL=estilos.css.map */

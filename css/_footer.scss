@@ -1,0 +1,134 @@
+footer {
+	background: #f1f1f1;
+
+	.contacto {
+		padding: 128px 0;
+
+		.texto {
+			text-align: center;
+
+			.titulo {
+				margin: 0;
+				font-weight: 400;
+				font-size: 24px;
+				line-height: 24px;
+			}
+
+			.descripcion {
+				font-size: 18px;
+				line-height: 18px;
+				margin: 18px 0;
+			}
+		}
+
+		.informacion-contacto {
+			margin: 48px 0 57px 0;
+
+			.direccion, .telefono, .correo {
+				margin-bottom: 15px;
+				line-height: 27px;
+				font-size: 16px;
+
+				i {
+					font-size: 36px;
+					text-align: center;
+					margin-right: 16px;
+				}
+			}
+		}
+
+		.formulario {
+			form p {
+				margin-bottom: 15px;
+				
+				.nombre, .email, .asunto, .mensaje {
+					display: block;
+					width: 100%;
+					padding: 8px;
+					border: 1px solid #ccc;
+					border-radius: 3px;
+					font-size: 15px;
+					line-height: 27px;
+
+					&:focus {
+						border: 2px solid #707070;
+					}
+				}
+
+				.mensaje {
+					min-width: 100%;
+					max-width: 100%;
+					min-height: 45px;
+					max-height: 90px;
+				}
+
+				.boton {
+					padding: 8px 16px;
+					background: #000;
+					color: #fff;
+					border: none;
+					line-height: 27px;
+					font-size: 15px;
+
+					&:hover {
+						color: #000;
+						background: #ccc;
+						cursor: pointer;
+					}
+				}
+			}
+		}
+	}
+
+	.redes-sociales {
+		background: #000;
+		padding: 50px 0;
+
+		.boton-inicio {
+			margin: 40px 0 20px 0;
+			display: flex;
+			flex-direction: row;
+			justify-content: center;
+
+			a {
+				display: block;
+				padding: 8px 16px;
+				background: #fff;
+				color: #000;
+				font-size: 15px;
+				line-height: 27px;
+				text-decoration: none;
+
+				i { margin-right: 16px; }
+
+				&:hover {
+					background: #ccc;
+				}
+			}
+		}
+
+		.contenedor-redes {
+			padding: 20px 0;
+			display: flex;
+			flex-direction: row;
+			flex-wrap: wrap;
+			justify-content: center;
+
+			a {
+				display: block;
+				padding: 15px;
+				border-radius: 3px;
+				font-size: 32px;
+				line-height: 32px;
+				color: #fff;
+				width: 100px;
+				text-align: center;
+			}
+
+			.facebook:hover { background: #3b5998;}
+			.instagram:hover { background: #5851db; }
+			.twitter:hover { background: #1da1f2; }
+			.linkedin:hover { background: #0077b5; }
+		}
+	}
+}

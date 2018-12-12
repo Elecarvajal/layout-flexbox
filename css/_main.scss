@@ -1,0 +1,272 @@
+.main {
+	.acerca-de {
+		background: #000;
+		text-align: center;
+
+		.texto {
+			width: 80%;
+			margin: 80px auto 50px auto;
+			font-size: 1.125em;
+			font-weight: 600;
+			line-height: 30px;
+			color: #eee;
+
+			.titulo {
+				font-weight: 300;
+				font-size: 36px;
+				line-height: 36px;
+				color: #dd820d;
+				margin-bottom: 40px;
+			}
+		}
+	}
+
+	.caracteristicas {
+		margin: 150px 0 110px 0;
+
+		.contenedor-caracteristicas {
+			display: flex;
+			flex-direction: row;
+			flex-wrap: wrap;
+			justify-content: space-between;
+
+			.caracteristica {
+				width: 22%;
+				margin-bottom: 40px;
+				text-align: center;
+
+				i { font-size: 64px; }
+
+				.titulo {
+					margin: 40px 0;
+					font-weight: 600;
+					font-size: 18px;
+					font-weight: 18px;
+					color: #c36f09;
+				}
+
+				.descripcion {
+					line-height: 27px;
+					font-size: 15px;
+					margin: 0;
+					font-weight: 300;
+				}
+			}
+		}
+	}
+
+	.trabajos {
+		background: #171b17;
+
+		.texto {
+			width: 80%;
+			margin: 80px auto 100px auto;
+			color: #fff;
+			text-align: center;
+
+			.titulo {
+				font-weight: 300;
+				font-size: 36px;
+				line-height: 36px;
+				color: #fff;
+				margin-bottom: 40px;
+			}
+
+			.descripcion {
+				font-weight: 600;
+				font-size: 18px;
+				line-height: 18px;
+				color: #fff;
+			}
+		}
+
+		.contenedor-trabajos {
+			display: flex;
+			flex-direction: row;
+			flex-wrap: wrap;
+			justify-content: space-between;
+			margin-bottom: 80px;
+
+			.trabajo {
+				width: 23%;
+				padding: 5px;
+				border: 1px solid #484848;
+				opacity: 0.5;
+				margin-bottom: 20px;
+
+				&:hover {
+					opacity: 1;
+					border: 1px solid #fff;
+				}
+
+				.foto {
+					width: 100%;
+
+					img {
+						width: 100%;
+						vertical-align: top;
+					}
+				}
+			}
+		}
+	}
+
+	.precios {
+		background: #616161;
+
+		.texto {
+			width: 80%;
+			margin: 80px auto 50px auto;
+			color: #fff;
+			text-align: center;
+
+			.titulo {
+				font-weight: 300;
+				font-size: 36px;
+				line-height: 36px;
+				margin-bottom: 40px;
+			}
+
+			.descripcion {
+				font-weight: 400;
+				font-size: 18px;
+				line-height: 18px;
+			}			
+		}
+
+		.contenedor-precios {
+			display: flex;
+			flex-direction: row;
+			flex-wrap: wrap;
+			justify-content: space-around;
+			align-items: baseline;
+			margin-bottom: 50px;
+
+			.basico, .pro, .premium {
+				width: 30%;
+
+				&:hover {
+					box-shadow: 0 5px 10px rgba(#000, .5);
+				}
+
+				.ofertas {
+					list-style: none;
+
+					.titulo {
+						padding: 32px 16px;
+						border-bottom: 1px solid #ddd;
+						text-align: center;
+						background: #000;
+						color: #fff;
+						font-size: 24px;
+					}
+
+					.almacenamiento {
+						padding: 16px;
+						border-bottom: 1px solid #ddd;
+						text-align: center;
+						font-size: 15px;
+						background: #fff;
+						line-height: 27px;
+
+						.bold {
+							font-weight: 600;
+						}
+					}
+
+					.correos {
+						padding: 16px;
+						border-bottom: 1px solid #ddd;
+						text-align: center;
+						font-size: 15px;
+						background: #fff;
+						line-height: 27px;
+
+						.bold {
+							font-weight: 600;
+						}
+					}
+
+					.dominios {
+						padding: 16px;
+						border-bottom: 1px solid #ddd;
+						text-align: center;
+						font-size: 15px;
+						background: #fff;
+						line-height: 27px;
+
+						.bold {
+							font-weight: 600;
+						}
+					}
+
+					.soporte {
+						padding: 16px;
+						border-bottom: 1px solid #ddd;
+						text-align: center;
+						font-size: 15px;
+						background: #fff;
+						line-height: 27px;
+
+						.bold {
+							font-weight: 600;
+						}
+					}
+
+					.costo {
+						padding: 16px;
+						border-bottom: 1px solid #ddd;
+						text-align: center;
+						background: #fff;
+						line-height: 27px;
+
+						.bold {
+							font-weight: 400;
+							line-height: 54px;
+							font-size: 30px;
+							margin: 10px 0;
+						}
+
+						.light {
+							font-size: 15px;
+							line-height: 18px;
+							font-weight: 400;
+							opacity: 0.6;
+						}
+					}
+
+					.registro {
+						background: #f1f1f1;
+						padding: 24px 16px;
+						text-align: center;
+
+						button {
+							background: #000;
+							color: #fff;
+							font-size: 15px;
+							line-height: 27px;
+							padding: 12px 24px;
+							border: none;
+
+							&:hover {
+								cursor: pointer;
+								background: #c6c6c6;
+								color: #000;
+							}
+						}
+					}
+				}
+			}
+			.pro {
+				.ofertas {
+					.titulo {
+						background: #f44336;
+						line-height: 43.2px;
+						padding: 48px 16px;
+						border-bottom: 1px solid #ddd;
+					}
+				}
+			}
+		}
+	}
+}
